@@ -18,7 +18,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "REPELÓN",
           url: "https://www.google.com/maps?q=10.494583787744517, -75.12465645459041",
           img:[
@@ -37,7 +37,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "SABANA LARGA",
           url: "https://www.google.com/maps?q=10.633265148065759, -74.91855982295412",
           img:[
@@ -56,7 +56,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "BARANOA",
           url: "https://www.google.com/maps?q=-74.918844155723932, 10.794435531610803",
           img:[
@@ -75,7 +75,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "GALAPA",
           url: "https://www.google.com/maps?q=10.895666290774663, -74.8865927015438",
           img:[
@@ -94,7 +94,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "BARRANQUILLA",
           url: "https://www.google.com/maps?q=11.015226407799405, -74.80035223848544",
           img:[
@@ -123,7 +123,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "TUBARÁ",
           url: "https://www.google.com/maps?q=10.938377668367258, -75.02805926685055",
           img:[
@@ -142,7 +142,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "JUAN DE ACOSTA",
           url: "https://www.google.com/maps?q=10.829956053758783, -75.03452804266702",
           img:[
@@ -161,7 +161,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "PIOJÓ",
           url: "https://www.google.com/maps?q=10.748610342424858, -75.10751487740833",
           img:[
@@ -180,7 +180,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "LURUACO",
           url: "https://www.google.com/maps?q=10.634418597825634, -75.16607375320497",
           img:[
@@ -199,7 +199,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "MALAMBO",
           url: "https://www.google.com/maps?q=10.860191709381887, -74.77452758205906",
           img:[
@@ -228,7 +228,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "REPELÓN",
           url: "https://www.google.com/maps?q=10.494583787744517, -75.12465645459041",
           img:[
@@ -247,7 +247,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "SABANA LARGA",
           url: "https://www.google.com/maps?q=10.633265148065759, -74.91855982295412",
           img:[
@@ -266,7 +266,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "BARANOA",
           url: "https://www.google.com/maps?q=-74.918844155723932, 10.794435531610803",
           img:[
@@ -285,7 +285,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "GALAPA",
           url: "https://www.google.com/maps?q=10.895666290774663, -74.8865927015438",
           img:[
@@ -304,7 +304,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 1,
           NOMBRE: "BARRANQUILLA",
           url: "https://www.google.com/maps?q=11.015226407799405, -74.80035223848544",
           img:[
@@ -323,7 +323,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "TUBARÁ",
           url: "https://www.google.com/maps?q=10.938377668367258, -75.02805926685055",
           img:[
@@ -342,7 +342,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "JUAN DE ACOSTA",
           url: "https://www.google.com/maps?q=10.829956053758783, -75.03452804266702",
           img:[
@@ -361,7 +361,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "PIOJÓ",
           url: "https://www.google.com/maps?q=10.748610342424858, -75.10751487740833",
           img:[
@@ -380,7 +380,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "LURUACO",
           url: "https://www.google.com/maps?q=10.634418597825634, -75.16607375320497",
           img:[
@@ -399,7 +399,7 @@ var json_Puntosturisticos_3 = [
       {
         type: "Feature",
         properties: {
-          id: 14,
+          id: 2,
           NOMBRE: "MALAMBO",
           url: "https://www.google.com/maps?q=10.860191709381887, -74.77452758205906",
           img:[
