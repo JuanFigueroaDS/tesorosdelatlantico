@@ -103,10 +103,14 @@ function changeRouteSpot(value) {
     } else if (value === "value3") {
         jsonSpot = json_Puntosturisticos_3[2];
         jsonRoute = json_Ruta_4[2];
+    } else if (value === "value4") {
+        jsonSpot = json_Puntosturisticos_3[3];
+        jsonRoute = json_Ruta_4[2];
     } else {
         jsonSpot = json_Puntosturisticos_3[0];
         jsonRoute = json_Ruta_4[0];
     }
+    
 
     // console.log(value);
     // console.log(jsonSpot);
