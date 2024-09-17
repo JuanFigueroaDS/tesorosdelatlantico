@@ -265,13 +265,11 @@
     <script src="data/Ruta_4.js"></script>
     <script>
       var map = L.map("map", {
+        // center: 
         zoomControl: false,
         maxZoom: 28,
         minZoom: 1,
-      }).fitBounds([
-        [10.278378440438468, -75.5736374072046],
-        [11.053013971938418, -74.28554890429213],
-      ]);
+      }).fitBounds([[10.683378050623764, -74.93771339495217],]);
       var hash = new L.Hash(map);
       map.attributionControl.setPrefix(
         '<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>'
@@ -354,6 +352,8 @@
 
       layer_WazeWorld_1;
       map.addLayer(layer_WazeWorld_1);
+
+      // Estilos de los municipios 
       function style_Mun_atlantico_2_0(feature) {
         return {
           pane: "pane_Mun_atlantico_2",
@@ -363,14 +363,14 @@
           dashArray: "",
           lineCap: "square",
           lineJoin: "bevel",
-          weight: 2.0,
+          weight: 2.5,
           fillOpacity: 0,
           interactive: false,
         };
       }
 
       map.createPane("pane_Mun_atlantico_2");
-      map.getPane("pane_Mun_atlantico_2").style.zIndex = 402;
+      map.getPane("pane_Mun_atlantico_2").style.zIndex = 500;
       map.getPane("pane_Mun_atlantico_2").style["mix-blend-mode"] = "normal";
 
       var layer_Mun_atlantico_2 = new L.geoJson(json_Mun_atlantico_2[0], {
@@ -442,7 +442,7 @@
       }
 
       map.createPane("pane_Puntosturisticos_3");
-      map.getPane("pane_Puntosturisticos_3").style.zIndex = 403;
+      map.getPane("pane_Puntosturisticos_3").style.zIndex = 500;
       map.getPane("pane_Puntosturisticos_3").style["mix-blend-mode"] = "normal";
 
       var layer_Puntosturisticos_3 = new L.geoJson(json_Puntosturisticos_3[0], {
@@ -563,7 +563,7 @@
       }
 
       map.createPane("pane_Ruta_4");
-      map.getPane("pane_Ruta_4").style.zIndex = 404;
+      map.getPane("pane_Ruta_4").style.zIndex = 500;
       map.getPane("pane_Ruta_4").style["mix-blend-mode"] = "normal";
 
       var layer_Ruta_4 = new L.geoJson(json_Ruta_4[0], {

@@ -17,6 +17,84 @@ selectCheckMun.forEach(element => {
     })
 });
 
+function getColorById (id){
+    switch (id){
+        case 1: return "#aeb6bf";
+        case 2: return "#85929e";
+        case 3: return "#5d6d7e";
+        case 4: return "#34495e";
+        case 5: return "#2e4053";
+        case 6: return "#283747";
+        case 7: return "#212f3c";
+        case 8: return "#1b2631";
+        case 9: return "#212f3d";
+        case 10: return "#cccccc";
+        case 11: return "#cccccc";
+        case 12: return "#cccccc";
+        case 13: return "#cccccc";
+        case 14: return "#cccccc";
+        case 15: return "#cccccc";
+        case 16: return "#cccccc";
+        case 17: return "#cccccc";
+        case 18: return "#cccccc";
+        case 19: return "#cccccc";
+        case 20: return "#cccccc";
+        case 21: return "#cccccc";
+        case 22: return "#cccccc";
+        case 23: return "#cccccc";
+    }
+}
+
+function styleById (feature) {
+    return {
+        pane: 'municipios',
+        fillColor: getColorById(feature.properties.id),
+        fillOpacity: 0.2,
+        color: "none",
+        opacity: 1,
+        weight: 1,
+        interactive: true
+    };
+}
+
+// Hover //
+function highlightFeature(e) {
+var layer = e.target;
+    layer.setStyle({
+        weight: 3,
+        color: "yellow",
+        fillOpacity: 0.9,
+    });
+}
+function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+}
+
+function onEachFeature(feature, layer){
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight
+    });
+}
+
+
+map.createPane("municipios");
+map.getPane("municipios").style.zIndex=400;
+
+var geojson = L.geoJson(json_Mun_atlantico_2, {
+    style: styleById,
+    onEachFeature: onEachFeature,
+}).addTo(map);
+
+
+var layer_municipios_atlantico = L.geoJson(json_Mun_atlantico_2, {
+    style: styleById,
+}).addTo(map);
+
+
+map.fitBounds(layer_municipios_atlantico.getBounds());
+map.fitBounds(geojson.getBounds());
+
 function changeMun(valueJson) {
 
     let style_Mun;
@@ -49,7 +127,7 @@ function changeMun(valueJson) {
         }
     }
 
-    //Elimina la malla del atlantico , ya creada
+    // //Elimina la malla del atlantico , ya creada
     layer_Mun_atlantico_2.remove();
 
     layer_Mun_atlantico_2 = new L.geoJson(json_Mun_atlantico_2[valueJson], {
@@ -64,6 +142,11 @@ function changeMun(valueJson) {
     bounds_group.addLayer(layer_Mun_atlantico_2);
     map.addLayer(layer_Mun_atlantico_2);
 }
+
+var layer_municipios_atlantico = L.geoJson(json_Mun_atlantico_2, {
+    style: styleById,
+    onEachFeature: onEachFeature
+}).addTo(map);
 
 /* ************ Modal y Cambio de puntos y rutas  ***************** */
 
@@ -159,27 +242,6 @@ function changeRouteSpot(value) {
 
 }
 
-/* ****** Nuevo modal ****** */
-// function showModal(name, img, description, url) {
-//     const modal = document.getElementById("myModal");
-//     const placeName = document.getElementById("place-name");
-//     const placeImg1 = document.getElementById("place-img1");
-//     const placeImg2 = document.getElementById("place-img2");
-//     const placeImg3 = document.getElementById("place-img3");
-//     const placeDescription = document.getElementById("place-description");
-//     const placeUrl = document.getElementById("place-url");
-//     console.log(placeImg2)
-//     console.log(placeImg3)
-
-//     placeName.textContent = name;
-//     placeImg1.src = img[0];
-//     placeImg2.src = img[1];
-//     placeImg3.src = img[2];
-//     placeDescription.textContent = description;
-//     placeUrl.href = url;
-
-//     modal.style.display = "block";
-// }
 
 // Para mostrar el modal
 function showModal(name, img, description, url) {
@@ -214,6 +276,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 
 
 /* ********* Carrusel *********** */
