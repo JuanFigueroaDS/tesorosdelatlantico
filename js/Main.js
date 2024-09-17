@@ -62,8 +62,8 @@ function highlightFeature(e) {
 var layer = e.target;
     layer.setStyle({
         weight: 3,
-        color: "yellow",
-        fillOpacity: 0.9,
+        color: "none",
+        fillOpacity: 0.95,
     });
 }
 function resetHighlight(e) {
@@ -77,6 +77,8 @@ function onEachFeature(feature, layer){
     });
 }
 
+map.createPane("hover");
+map.getPane("hover").style.zIndex=500;
 
 map.createPane("municipios");
 map.getPane("municipios").style.zIndex=400;
